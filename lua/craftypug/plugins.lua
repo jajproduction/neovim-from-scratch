@@ -51,4 +51,7 @@ packer.startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- For git blame & browse
+
+  -- Coc (Conquer of Completion)
+  use { 'neoclide/coc.nvim', branch = 'release' }
 end)
