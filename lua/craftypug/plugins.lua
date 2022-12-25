@@ -23,8 +23,10 @@ packer.startup(function(use)
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
   use 'goolord/alpha-nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
 
   use 'glepnir/lspsaga.nvim' -- LSP UIs
+  use 'norcalli/snippets.nvim'
   use 'L3MON4D3/LuaSnip'
   use {
     'nvim-treesitter/nvim-treesitter',
