@@ -24,6 +24,7 @@ packer.startup(function(use)
   use 'williamboman/mason-lspconfig.nvim'
   use 'goolord/alpha-nvim'
   -- use 'lukas-reineke/indent-blankline.nvim'
+  use 'dense-analysis/ale'
 
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'norcalli/snippets.nvim'

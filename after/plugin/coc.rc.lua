@@ -1,5 +1,6 @@
 vim.cmd [[
 let g:coc_global_extensions = [
+  \ '@yaegassy/coc-intelephense',
   \ 'coc-clangd',
   \ 'coc-css',
   \ 'coc-cssmodules',
