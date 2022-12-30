@@ -24,7 +24,7 @@ packer.startup(function(use)
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
   use 'goolord/alpha-nvim'
-  -- use 'lukas-reineke/indent-blankline.nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
   use 'dense-analysis/ale'
   use "kyazdani42/nvim-tree.lua"
 
