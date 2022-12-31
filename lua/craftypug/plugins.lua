@@ -27,6 +27,7 @@ packer.startup(function(use)
   use 'lukas-reineke/indent-blankline.nvim'
   use 'dense-analysis/ale'
   use "kyazdani42/nvim-tree.lua"
+  use 'folke/tokyonight.nvim'
 
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'norcalli/snippets.nvim'

@@ -1,3 +1,3 @@
 vim.cmd [[
-colorscheme ayu-dark
+colorscheme tokyonight-night
 ]]
