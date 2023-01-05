@@ -249,6 +249,11 @@ _G.packer_plugins = {
     path = "/home/jd/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ["vim-prisma"] = {
+    loaded = true,
+    path = "/home/jd/.local/share/nvim/site/pack/packer/start/vim-prisma",
+    url = "https://github.com/pantharshit00/vim-prisma"
+  },
   ["zen-mode.nvim"] = {
     loaded = true,
     path = "/home/jd/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
