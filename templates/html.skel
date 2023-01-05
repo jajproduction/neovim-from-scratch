@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/globals.css" />
     <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.CSS" rel=" stylesheet" />
     <title>Document</title>
   </head>
   <body></body>
