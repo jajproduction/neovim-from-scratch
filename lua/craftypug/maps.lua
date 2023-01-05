@@ -35,3 +35,5 @@ keymap.set('n', '<C-w><down>', '<C-w>-')
 
 -- Toggle nvim tree
 keymap.set('n', '<Space>e', ':NvimTreeToggle')
+-- Add file
+keymap.set('n', 'aa', ':e')
