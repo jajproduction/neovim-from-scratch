@@ -59,4 +59,6 @@ packer.startup(function(use)
 
   -- Coc (Conquer of Completion)
   use { 'neoclide/coc.nvim', branch = 'release' }
+
+  use 'pantharshit00/vim-prisma'
 end)
