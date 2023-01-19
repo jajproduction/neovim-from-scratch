@@ -27,6 +27,7 @@ packer.startup(function(use)
   use 'dense-analysis/ale'
   use 'kyazdani42/nvim-tree.lua'
   use 'folke/tokyonight.nvim'
+  use { "ellisonleao/gruvbox.nvim" }
 
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'norcalli/snippets.nvim'
