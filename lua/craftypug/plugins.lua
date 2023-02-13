@@ -25,7 +25,6 @@ packer.startup(function(use)
   use 'williamboman/mason-lspconfig.nvim'
   use 'goolord/alpha-nvim'
   use 'dense-analysis/ale'
-  use 'kyazdani42/nvim-tree.lua'
   use 'folke/tokyonight.nvim'
   use { "ellisonleao/gruvbox.nvim" }
 
