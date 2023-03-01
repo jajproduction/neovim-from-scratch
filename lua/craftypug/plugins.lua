@@ -27,6 +27,13 @@ packer.startup(function(use)
   use 'dense-analysis/ale'
   use 'folke/tokyonight.nvim'
   use { "ellisonleao/gruvbox.nvim" }
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
 
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'norcalli/snippets.nvim'
