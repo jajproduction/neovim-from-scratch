@@ -1,14 +1,54 @@
+local M = {}
 local status, bufferline = pcall(require, "bufferline")
 if (not status) then return end
 
 bufferline.setup({
+  on_config_done = nil,
   options = {
-    mode = "tabs",
-    separator_style = 'thick',
+    active = true,
+    mode = "buffers",
+    numbers = "none",
+    close_command = function(bufnr) -- can be a string | function, see "Mouse actions"
+      M.buf_kill("bd", bufnr, false)
+    end,
+    separator_style = 'thin',
     always_show_bufferline = false,
     show_buffer_close_icons = false,
     show_close_icon = false,
-    color_icons = true
+    color_icons = true,
+    persist_buffer_sort = true,
+    enforce_regular_tabs = false,
+    offsets = {
+      {
+        filetype = "undotree",
+        text = "Undotree",
+        highlight = "PanelHeading",
+        padding = 1,
+      },
+      {
+        filetype = "NvimTree",
+        text = "Explorer",
+        highlight = "PanelHeading",
+        padding = 1,
+      },
+      {
+        filetype = "DiffviewFiles",
+        text = "Diff View",
+        highlight = "PanelHeading",
+        padding = 1,
+      },
+      {
+        filetype = "flutterToolsOutline",
+        text = "Flutter Outline",
+        highlight = "PanelHeading",
+      },
+      {
+        filetype = "packer",
+        text = "Packer",
+        highlight = "PanelHeading",
+        padding = 1,
+      },
+    },
   },
   highlights = {
     separator = {
