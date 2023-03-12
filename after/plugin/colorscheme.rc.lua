@@ -1,5 +1,5 @@
 vim.cmd [[
-colorscheme gruvbox
+colorscheme tokyonight-night
 highlight Normal guibg=none
 highlight LineNr guibg=none
 highlight Folded guibg=none

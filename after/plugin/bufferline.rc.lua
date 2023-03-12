@@ -1,19 +1,17 @@
-local M = {}
 local status, bufferline = pcall(require, "bufferline")
 if (not status) then return end
 
 bufferline.setup({
-  on_config_done = nil,
   options = {
-    active = true,
     mode = "buffers",
     numbers = "none",
-    close_command = function(bufnr) -- can be a string | function, see "Mouse actions"
-      M.buf_kill("bd", bufnr, false)
-    end,
+    close_command = "bdelete %d",
+    right_mouse_command = "bdelete! %d",
+    left_mouse_command = "buffer %d",
+    middle_mouse_command = nil,
     separator_style = 'thin',
     always_show_bufferline = false,
-    show_buffer_close_icons = false,
+    show_buffer_close_icons = true,
     show_close_icon = false,
     color_icons = true,
     persist_buffer_sort = true,
@@ -52,23 +50,23 @@ bufferline.setup({
   },
   highlights = {
     separator = {
-      fg = '#98971a',
-      bg = '#282828',
+      fg = '#9ece6a',
+      bg = '#1a1b26',
     },
     separator_selected = {
-      fg = '#d79921',
+      fg = '#e0af68',
     },
     background = {
-      fg = '#ebdbb2',
-      bg = '#282828'
+      fg = '#a9b1d6',
+      bg = '#1a1b26'
     },
     buffer_selected = {
-      fg = '#282828',
-      bg = '#ebdbb2',
+      fg = '#1a1b26',
+      bg = '#a9b1d6',
       bold = true,
     },
     fill = {
-      bg = '#282828'
+      bg = '#1a1b26'
     }
   },
 })
