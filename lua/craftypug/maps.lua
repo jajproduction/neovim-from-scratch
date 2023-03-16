@@ -34,6 +34,8 @@ keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
 
 -- Toggle nvim tree
-keymap.set('n', '<Space>e', ':NvimTreeToggle')
+keymap.set('n', '<Space>e', '<Cmd>NvimTreeToggle<CR>')
+-- Close buffer
+keymap.set('n', '<Space>c', '<Cmd>bdelete %d<CR>')
 -- Add file
 keymap.set('n', 'aa', ':e')
