@@ -11,8 +11,8 @@ bufferline.setup({
     middle_mouse_command = nil,
     separator_style = 'thin',
     always_show_bufferline = false,
-    show_buffer_close_icons = true,
-    show_close_icon = false,
+    show_buffer_close_icons = false,
+    show_close_icon = true,
     color_icons = true,
     persist_buffer_sort = true,
     enforce_regular_tabs = false,
@@ -50,23 +50,22 @@ bufferline.setup({
   },
   highlights = {
     separator = {
-      fg = '#9ece6a',
-      bg = '#1a1b26',
+      fg = '#073642',
+      bg = '#002b36',
     },
     separator_selected = {
-      fg = '#e0af68',
+      fg = '#073642',
     },
     background = {
-      fg = '#a9b1d6',
-      bg = '#1a1b26'
+      fg = '#657b83',
+      bg = '#002b36'
     },
     buffer_selected = {
-      fg = '#1a1b26',
-      bg = '#a9b1d6',
+      fg = '#fdf6e3',
       bold = true,
     },
     fill = {
-      bg = '#1a1b26'
+      bg = '#073642'
     }
   },
 })
