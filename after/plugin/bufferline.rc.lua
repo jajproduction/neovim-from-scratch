@@ -3,13 +3,13 @@ if (not status) then return end
 
 bufferline.setup({
   options = {
-    mode = "buffers",
+    mode = "tabs",
     numbers = "none",
     close_command = "bdelete %d",
     right_mouse_command = "bdelete! %d",
     left_mouse_command = "buffer %d",
     middle_mouse_command = nil,
-    separator_style = 'thin',
+    separator_style = 'slant',
     always_show_bufferline = false,
     show_buffer_close_icons = false,
     show_close_icon = true,
@@ -51,14 +51,14 @@ bufferline.setup({
   highlights = {
     separator = {
       fg = '#073642',
-      bg = '#002b36',
+      bg = '#0A0E14',
     },
     separator_selected = {
       fg = '#073642',
     },
     background = {
       fg = '#657b83',
-      bg = '#002b36'
+      bg = '#0A0E14'
     },
     buffer_selected = {
       fg = '#fdf6e3',
