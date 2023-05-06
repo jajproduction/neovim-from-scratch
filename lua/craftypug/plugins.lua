@@ -27,7 +27,6 @@ packer.startup(function(use)
   use 'dense-analysis/ale'
   use 'folke/tokyonight.nvim'
   use { "ellisonleao/gruvbox.nvim" }
-  use "kyazdani42/nvim-tree.lua"
 
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'norcalli/snippets.nvim'
@@ -55,7 +54,6 @@ packer.startup(function(use)
   use 'godlygeek/tabular'
   use 'preservim/vim-markdown'
   -- use 'akinsho/nvim-bufferline.lua'
-  use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
   -- use 'github/copilot.vim'
 
   use 'lewis6991/gitsigns.nvim'
