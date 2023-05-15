@@ -1,5 +1,5 @@
-vim.cmd [[
-" colorscheme tokyonight-night
+vim.cmd([[
+colorscheme gruvbox
 " highlight Normal guibg=none
 " highlight LineNr guibg=none
 " highlight Folded guibg=none
@@ -9,4 +9,4 @@ vim.cmd [[
 " highlight SignColumn guibg=none
 " highlight EndOfBuffer guibg=none
 " highlight TablineFill guibg=none
-]]
+]])
