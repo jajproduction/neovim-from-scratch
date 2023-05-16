@@ -8,28 +8,22 @@ vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'Shatur/neovim-ayu'
   use {
     'svrana/neosolarized.nvim',
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
-  use 'nvim-lualine/lualine.nvim'       -- Statusline
-  use 'nvim-lua/plenary.nvim'           -- Common utilities
-  use 'onsails/lspkind-nvim'            -- vscode-like pictograms
-  use 'hrsh7th/cmp-buffer'              -- nvim-cmp source for buffer words
-  use 'hrsh7th/cmp-nvim-lsp'            -- nvim-cmp source for neovim's built-in LSP
-  use 'hrsh7th/nvim-cmp'                -- Completion
-  use 'neovim/nvim-lspconfig'           -- LSP
+  use 'nvim-lualine/lualine.nvim' -- Statusline
+  use 'nvim-lua/plenary.nvim' -- Common utilities
+  use 'onsails/lspkind-nvim' -- vscode-like pictograms
+  use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
+  use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
+  use 'hrsh7th/nvim-cmp' -- Completion
+  use 'neovim/nvim-lspconfig' -- LSP
   use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
-  use 'goolord/alpha-nvim'
-  use 'dense-analysis/ale'
-  use 'folke/tokyonight.nvim'
-  use { "ellisonleao/gruvbox.nvim" }
 
   use 'glepnir/lspsaga.nvim' -- LSP UIs
-  use 'norcalli/snippets.nvim'
   use 'L3MON4D3/LuaSnip'
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -51,16 +45,9 @@ packer.startup(function(use)
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
   })
-  use 'godlygeek/tabular'
-  use 'preservim/vim-markdown'
-  -- use 'akinsho/nvim-bufferline.lua'
+  use 'akinsho/nvim-bufferline.lua'
   -- use 'github/copilot.vim'
 
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- For git blame & browse
-
-  -- Coc (Conquer of Completion)
-  use { 'neoclide/coc.nvim', branch = 'release' }
-
-  use 'pantharshit00/vim-prisma'
 end)

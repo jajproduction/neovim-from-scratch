@@ -1,4 +1,4 @@
-require('craftypug.base')
-require('craftypug.highlights')
-require('craftypug.maps')
-require('craftypug.plugins')
+require('craftzdog.base')
+require('craftzdog.highlights')
+require('craftzdog.maps')
+require('craftzdog.plugins')

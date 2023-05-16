@@ -4,18 +4,20 @@ if (not status) then return end
 ts.setup {
   highlight = {
     enable = true,
-    disable = {
-      "php"
-    },
+    disable = {},
   },
   indent = {
     enable = true,
     disable = {},
   },
   ensure_installed = {
+    "markdown",
+    "markdown_inline",
     "tsx",
+    "typescript",
     "toml",
     "fish",
+    "php",
     "json",
     "yaml",
     "swift",
@@ -26,11 +28,11 @@ ts.setup {
   autotag = {
     enable = true,
   },
+  context_commentstring = {
+    enable         = true,
+    enable_autocmd = false,
+  }
 }
 
-local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
-parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }
-local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
-parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
 parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }
