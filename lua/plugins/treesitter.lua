@@ -15,11 +15,14 @@ return {
 				"graphql",
 				"http",
 				"java",
+				"javascript",
 				"php",
 				"rust",
 				"scss",
 				"sql",
 				"svelte",
+				"typescript",
+				"tsx",
 			},
 
 			-- matchup = {
@@ -55,6 +58,10 @@ return {
 		config = function(_, opts)
 			local treesitter_config = {
 				autotag = { enable = true },
+				highlight = {
+					enable = true,
+					use_languagetree = true,
+				},
 			}
 
 			-- Merge the provided options with the default configuration
