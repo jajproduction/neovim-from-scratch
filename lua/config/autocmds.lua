@@ -12,3 +12,12 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.opt.conceallevel = 0
 	end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "markdown" },
+	callback = function()
+		vim.opt.linebreak = true
+		vim.opt.cursorline = false
+		vim.opt.number = false
+	end,
+})
