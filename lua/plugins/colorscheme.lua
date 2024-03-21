@@ -9,11 +9,11 @@ return {
 	-- 		}
 	-- 	end,
 	-- },
-	{
-		"olimorris/onedarkpro.nvim",
-		priority = 1000,
-	},
-	-- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	-- {
+	-- 	"olimorris/onedarkpro.nvim",
+	-- 	priority = 1000,
+	-- },
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	-- { "sainnhe/gruvbox-material", priority = 1000 },
 	-- {
 	-- 	"ellisonleao/gruvbox.nvim",
