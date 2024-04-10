@@ -13,7 +13,7 @@ return {
 	-- 	"olimorris/onedarkpro.nvim",
 	-- 	priority = 1000,
 	-- },
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	-- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	-- { "sainnhe/gruvbox-material", priority = 1000 },
 	-- {
 	-- 	"ellisonleao/gruvbox.nvim",
@@ -23,4 +23,5 @@ return {
 	-- 		return { transparent_mode = true }
 	-- 	end,
 	-- },
+	{ "lunarvim/darkplus.nvim", priority = 1000 },
 }

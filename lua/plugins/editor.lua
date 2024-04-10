@@ -89,7 +89,7 @@ return {
 				desc = "Search for a string in your current working directory and get results live as you type, respects .gitignore",
 			},
 			{
-				"\\\\",
+				";b",
 				function()
 					local builtin = require("telescope.builtin")
 					builtin.buffers()
@@ -140,7 +140,7 @@ return {
 					telescope.extensions.file_browser.file_browser({
 						path = "%:p:h",
 						cwd = telescope_buffer_dir(),
-						respect_gitignore = false,
+						respect_gitignore = true,
 						hidden = true,
 						grouped = true,
 						previewer = false,
