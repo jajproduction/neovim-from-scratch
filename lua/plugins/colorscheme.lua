@@ -23,5 +23,6 @@ return {
 	-- 		return { transparent_mode = true }
 	-- 	end,
 	-- },
-	{ "lunarvim/darkplus.nvim", priority = 1000 },
+	-- { "lunarvim/darkplus.nvim", priority = 1000 },
+	{ "rose-pine/neovim", name = "rose-pine" },
 }
