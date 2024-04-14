@@ -7,9 +7,9 @@ local opts = { noremap = true, silent = true }
 
 -- Do things without affecting the registers
 keymap.set("n", "x", '"_x')
-keymap.set("n", "<Leader>p", '"0p')
-keymap.set("n", "<Leader>P", '"0P')
-keymap.set("v", "<Leader>p", '"0p')
+keymap.set("n", "<Leader>p", '"2p')
+keymap.set("n", "<Leader>P", '"2P')
+keymap.set("v", "<Leader>p", '"2p')
 keymap.set("n", "<Leader>c", '"_c')
 keymap.set("n", "<Leader>C", '"_C')
 keymap.set("v", "<Leader>c", '"_c')
@@ -28,6 +28,9 @@ keymap.set("n", "dw", 'vb"_d')
 
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
+
+-- Save all
+keymap.set("n", "<C-s>", ":w<CR>")
 
 -- Save with root permission (not working for now)
 --vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
@@ -57,6 +60,9 @@ keymap.set("n", "<C-w><left>", "<C-w><")
 keymap.set("n", "<C-w><right>", "<C-w>>")
 keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
+
+-- Toggle Terminal
+keymap.set("n", "<C-`>", ":ToggleTerm<Return>")
 
 -- Diagnostics
 keymap.set("n", "<C-j>", function()
