@@ -62,7 +62,7 @@ keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- Toggle Terminal
-keymap.set("n", "<C-`>", ":ToggleTerm<Return>")
+keymap.set("n", "<Leader>t", ":ToggleTerm<Return>")
 
 -- Diagnostics
 keymap.set("n", "<C-j>", function()
