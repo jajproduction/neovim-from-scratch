@@ -4,7 +4,7 @@ return {
 		"nvim-telescope/telescope.nvim",
 		"tpope/vim-dotenv",
 		"MunifTanjim/nui.nvim",
-		-- "nvimtools/none-ls.nvim",
+		"nvimtools/none-ls.nvim",
 	},
 	cmd = { "Sail", "Artisan", "Composer", "Npm", "Yarn", "Laravel" },
 	keys = {
@@ -14,4 +14,9 @@ return {
 	},
 	event = { "VeryLazy" },
 	config = true,
+	features = {
+		null_ls = {
+			enable = false,
+		},
+	},
 }

@@ -62,6 +62,9 @@ return {
 					enable = true,
 					use_languagetree = true,
 				},
+				indent = {
+					enable = true,
+				},
 			}
 
 			-- Merge the provided options with the default configuration
