@@ -152,7 +152,7 @@ return {
 
 	{
 		"nvimdev/dashboard-nvim",
-		enabled = true,
+		enabled = false,
 		event = "VimEnter",
 		opts = function(_, opts)
 			local logo = [[
