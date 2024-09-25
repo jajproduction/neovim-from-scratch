@@ -86,9 +86,17 @@ return {
 		opts = {
 			options = {
 				mode = "tabs",
-				-- separator_style = "slant",
 				show_buffer_close_icons = false,
 				show_close_icon = false,
+				always_show_bufferline = true,
+				diagnostics = "nvim_lsp",
+				-- separator_style = "slant",
+				max_name_length = 18,
+				max_prefix_length = 15,
+				tab_size = 18,
+				offsets = {
+					{ filetype = "NvimTree", text = "File Explorer", padding = 1 },
+				},
 			},
 		},
 	},
@@ -159,7 +167,7 @@ return {
 
 	{
 		"nvimdev/dashboard-nvim",
-		enabled = true,
+		enabled = false,
 		event = "VimEnter",
 		opts = function(_, opts)
 			local logo = [[
