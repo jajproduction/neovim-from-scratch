@@ -96,13 +96,20 @@ return {
 	-- statusline
 	{
 		"nvim-lualine/lualine.nvim",
-		event = "VeryLazy",
-		opts = {
-			options = {
-				-- globalstatus = false,
-				theme = "auto",
-			},
-		},
+		opts = function(_, opts)
+			local LazyVim = require("lazyvim.util")
+			opts.sections.lualine_c[4] = {
+				LazyVim.lualine.pretty_path({
+					length = 0,
+					relative = "cwd",
+					modified_hl = "MatchParen",
+					directory_hl = "",
+					filename_hl = "Bold",
+					modified_sign = "",
+					readonly_icon = " 󰌾 ",
+				}),
+			}
+		end,
 	},
 
 	-- filename
@@ -152,7 +159,7 @@ return {
 
 	{
 		"nvimdev/dashboard-nvim",
-		enabled = false,
+		enabled = true,
 		event = "VimEnter",
 		opts = function(_, opts)
 			local logo = [[
