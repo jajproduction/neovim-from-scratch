@@ -33,7 +33,7 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.vscode" },
 		{ import = "lazyvim.plugins.extras.util.mini-hipatterns" },
 		{ import = "lazyvim.plugins.extras.lsp.none-ls" },
-		{ import = "lazyvim.plugins.extras.coding.tabnine" },
+		{ import = "lazyvim.plugins.extras.ai.tabnine" },
 		{ import = "plugins" },
 	},
 	defaults = {
