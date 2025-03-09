@@ -1,18 +1,18 @@
 return {
-	-- {
-	-- 	"craftzdog/solarized-osaka.nvim",
-	-- 	lazy = true,
-	-- 	priority = 1000,
-	-- 	opts = function()
-	-- 		return {
-	-- 			transparent = true,
-	-- 		}
-	-- 	end,
-	-- },
 	{
-		"olimorris/onedarkpro.nvim",
+		"craftzdog/solarized-osaka.nvim",
+		lazy = true,
 		priority = 1000,
+		opts = function()
+			return {
+				transparent = true,
+			}
+		end,
 	},
+	-- {
+	-- 	"olimorris/onedarkpro.nvim",
+	-- 	priority = 1000,
+	-- },
 	-- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	-- {
 	-- 	"sainnhe/gruvbox-material",
