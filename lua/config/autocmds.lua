@@ -16,8 +16,21 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = { "markdown" },
 	callback = function()
+		vim.opt.wrap = true
 		vim.opt.linebreak = true
 		vim.opt.cursorline = false
 		vim.opt.number = false
+		vim.opt.relativenumber = false
+	end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "mdx" },
+	callback = function()
+		vim.opt.wrap = true
+		vim.opt.linebreak = true
+		vim.opt.cursorline = false
+		vim.opt.number = false
+		vim.opt.relativenumber = false
 	end,
 })
