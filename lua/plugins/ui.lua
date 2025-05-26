@@ -169,7 +169,7 @@ return {
 		"folke/snacks.nvim",
 		opts = {
 			dashboard = {
-				enabled = false,
+				enabled = true,
 				preset = {
 					header = [[
      ██╗ █████╗      ██╗    ██████╗    
