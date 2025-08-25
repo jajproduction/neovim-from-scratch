@@ -182,16 +182,16 @@ return {
 				},
 			},
 		},
-		-- config = function(_, opts)
-		-- 	require("snacks").setup(opts)
-		-- 	vim.api.nvim_create_autocmd("User", {
-		-- 		pattern = "LazyVimStarted",
-		-- 		callback = function()
-		-- 			vim.schedule(function()
-		-- 				require("snacks").picker.explorer({})
-		-- 			end)
-		-- 		end,
-		-- 	})
-		-- end,
+		config = function(_, opts)
+			require("snacks").setup(opts)
+			vim.api.nvim_create_autocmd("User", {
+				pattern = "LazyVimStarted",
+				callback = function()
+					vim.schedule(function()
+						require("snacks").picker.explorer({})
+					end)
+				end,
+			})
+		end,
 	},
 }
