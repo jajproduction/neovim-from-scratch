@@ -41,7 +41,7 @@ return {
 
 	-- Go forward/backward with square brackets
 	{
-		"echasnovski/mini.bracketed",
+		"nvim-mini/mini.bracketed",
 		event = "BufReadPost",
 		config = function()
 			local bracketed = require("mini.bracketed")
@@ -88,10 +88,25 @@ return {
 	},
 
 	{
-		"nvim-cmp",
-		dependencies = { "hrsh7th/cmp-emoji" },
+		"hrsh7th/nvim-cmp",
+		dependencies = {
+			{
+				"garymjr/nvim-snippets",
+				opts = {
+					friendly_snippets = true,
+				},
+				dependencies = { "rafamadriz/friendly-snippets" },
+			},
+		},
 		opts = function(_, opts)
-			table.insert(opts.sources, { name = "emoji" })
+			opts.snippet = {
+				expand = function(item)
+					return LazyVim.cmp.expand(item.body)
+				end,
+			}
+			if LazyVim.has("nvim-snippets") then
+				table.insert(opts.sources, { name = "snippets" })
+			end
 		end,
 	},
 }

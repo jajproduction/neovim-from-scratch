@@ -56,22 +56,9 @@ return {
 			},
 		},
 		config = function(_, opts)
-			local treesitter_config = {
-				autotag = { enable = true },
-				highlight = {
-					enable = true,
-					use_languagetree = true,
-				},
-				indent = {
-					enable = true,
-				},
-			}
+			-- require("nvim-treesitter.configs").setup(opts)
 
-			-- Merge the provided options with the default configuration
-			local merged_config = vim.tbl_deep_extend("force", treesitter_config, opts)
-
-			require("nvim-treesitter.configs").setup(merged_config)
-
+			-- MDX
 			vim.filetype.add({
 				extension = {
 					mdx = "mdx",
