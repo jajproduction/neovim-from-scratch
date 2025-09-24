@@ -34,7 +34,7 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.editor.telescope" },
 		{ import = "lazyvim.plugins.extras.util.mini-hipatterns" },
 		{ import = "lazyvim.plugins.extras.lsp.none-ls" },
-		{ import = "lazyvim.plugins.extras.ai.tabnine" },
+		{ import = "lazyvim.plugins.extras.ai.copilot" },
 		{ import = "plugins" },
 	},
 	defaults = {

@@ -56,4 +56,12 @@ return {
 			}
 		end,
 	},
+	{
+		"rose-pine/neovim",
+		name = "rose-pine",
+		config = true,
+		opts = function()
+			return { transparent_mode = true }
+		end,
+	},
 }
