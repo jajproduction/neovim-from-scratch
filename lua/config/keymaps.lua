@@ -1,7 +1,3 @@
--- local discipline = require("user.discipline")
-
--- discipline.cowboy()
-
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
@@ -63,16 +59,3 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- Toggle Terminal
 keymap.set("n", "<Leader>t", ":ToggleTerm<Return>")
-
--- Diagnostics
-keymap.set("n", "<C-j>", function()
-	vim.diagnostic.goto_next()
-end, opts)
-
-keymap.set("n", "<leader>r", function()
-	require("user.hsl").replaceHexWithHSL()
-end)
-
-keymap.set("n", "<leader>i", function()
-	require("user.lsp").toggleInlayHints()
-end)
