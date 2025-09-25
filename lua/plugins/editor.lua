@@ -177,4 +177,5 @@ return {
       require("telescope").load_extension("file_browser")
     end,
   },
+  { "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons", enabled = false },
 }
